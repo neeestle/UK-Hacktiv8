@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('experiences')">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('education')">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('skills')">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('interests')">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('award')">Award</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content" class="container mt-5">
+        <div id="main" class="text-center">
+            <h1>Welcome to My Profile</h1>
+            <p>Select a section from the menu above to learn more about me!</p>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About</h2>
+            <p style="margin-top: 0.5cm;">I'm Arnesta Ilham Ramadhan, a recent graduate with a 3.6 GPA, experienced in game design, certified in 3D animation (Maya), and an aspiring copywriter. I've interned at Gamelab Indonesia, working on 3D creation. I speak both Bahasa and English, and I'm passionate about storytelling through games, animations, and writing. My goal is to blend my creative skills to create impactful and innovative projects that keeps me hooked to learn everyday.</p>
+            <p style="margin-top: 0.5cm;">Just learned about HTML, CSS, & Bootstrap through Hacktiv8 Course! Definitely a fun experiences to learn.</p>
+            <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+        </div>
+        <div id="experiences" class="section">
+            <h2>Experiences</h2>
+            <dl>
+                <p style="margin-top: 0.5cm;"><dt>Gamelab Indonesia</dt></p>
+                <dd>Intern 3D Asset Creation</dd>
+                <p style="margin-top: 0.5cm;"><dt>E-Sport Tournament IVPL RISE</dt></p>
+                <dd>Volunteer Committee</dd>
+            </dl>
+            <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+        </div>
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <ul style="list-style-type: square;">
+                <li>Politeknik Negeri Media Kreatif</li>
+                <li>SMAN 12 Depok</li>
+                <li>SMP Pelita Dua</li>
+                <li>MI Almuhajirin</li>
+                </ul>
+                <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+            </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <h3 style="margin-top: 1.5cm;"><p>Technical/Hard Skills</p></h3>
+            <ol type="I" style="display: inline-block;"></ol>
+                <li>3D Animation</li>
+                <li>3D Asset</li>
+                <li>Game Design</li>
+                <li>Copywriting</li>
+                <li>Adobe Potoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Premiere Pro</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
+            <h3 style="margin-top: 1.5cm;"><p>Soft Skills</p></h3>
+            <ol type="I" style="display: inline-block;"></ol>
+                <li>Billingual (EN & ID)</li>
+                <li>Time Management</li>
+                <li>Teamwork</li>
+                <li>Observe and Analyze</li>
+            </ol>
+            <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+        </div>
+        <div id="interests" class="section">
+            <h2>Interests</h2>
+            <ol type="i" style="display: inline-block;"></ol>
+                <li>Reddit-surfing</li>
+                <li>Cat-sitting</li>
+                <li>Mental Health</li>
+                <li>Music Enthusiast</li>
+                <li>PC-building</li>
+                <li>Defends of the Ancient 2</li>
+            </ol>
+            <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+        </div>
+        <div id="award" class="section">
+            <h2>Achievements</h2>
+            <dl>
+                <p style="margin-top: 0.5cm;"><dt>Finished Prakerja - Web Developer Fundamentals</dt></p>
+                <dd>on 3 June 2024</dd>
+                <p style="margin-top: 0.5cm;"><dt>Finished College on-time</dt></p>
+                <dd>with above 3 GPA</dd>
+                <p style="margin-top: 0.5cm;"><dt>3D Animator Certified</dt></p>
+                <dd>on 20 June 2022</dd>
+            </dl>
+            <button class="btn btn-primary" onclick="goBack()" style="margin-top: 1cm;">Back</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
